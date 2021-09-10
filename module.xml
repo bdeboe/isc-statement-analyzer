@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26">
+  <Document name="isc-statement-analyzer.ZPM">
+    <Module>
+      <Name>isc-statement-analyzer</Name>
+      <Version>0.0.1</Version>
+      <Description>Basic cube for analyzing your SQL Runtime Stats</Description>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="SQL.PKG"/>
+      <Invokes>
+        <Invoke Class="%DeepSee.Utils" Method="%BuildCube">
+          <Arg>SQLStats</Arg>
+        </Invoke>
+      </Invokes>
+    </Module>
+  </Document>
+</Export>
